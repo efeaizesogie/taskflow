@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReviewCard = ({avatar, review, icon, reviewer, reviewerPost}) => {
   return (
-    <div className={`border border-[#f2f2f288] rounded-xl shadow-md p-8`}>
+    <div className={`border border-[#f2f2f288] rounded-xl shadow-md p-8 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1`}>
         
         <img src={icon} alt='notion icon' className='mb-12' /> 
 

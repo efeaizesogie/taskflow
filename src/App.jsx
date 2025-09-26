@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="font-inter text-text">
      <Header/>
-     <Features/>
-     <Reviews/>
-     <Pricing/>
-     <Footer/>
+     <section id="features"><Features/></section>
+     <section id="reviews"><Reviews/></section>
+     <section id="pricing"><Pricing/></section>
+     <section id="contact"><Footer/></section>
     </div>
   )
 }

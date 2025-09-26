@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="w-full flex justify-between items-center bg-dark-bg text-text-dark px-5 md:px-20 py-5 relative z-50">
+    <nav className="w-full flex justify-between items-center bg-dark-bg text-text-dark px-5 md:px-20 py-5 relative z-50 animate-[slideDown_0.8s_ease-out]">
       <div className='flex gap-12 items-center '>
         <Logo/>
 
@@ -72,28 +72,28 @@ const Navbar = () => {
         <a 
           href="#features" 
           onClick={() => handleMenuClick('#features')}
-          className="text-text-dark text-2xl font-inter hover:text-primary transition-all duration-300 transform hover:scale-110"
+          className="text-text-dark text-2xl hover:text-primary transition-all duration-300 transform hover:scale-110"
         >
           Features
         </a>
         <a 
           href="#pricing" 
           onClick={() => handleMenuClick('#pricing')}
-          className="text-text-dark text-2xl font-inter hover:text-primary transition-all duration-300 transform hover:scale-110"
+          className="text-text-dark text-2xl hover:text-primary transition-all duration-300 transform hover:scale-110"
         >
           Pricing
         </a>
         <a 
           href="#reviews" 
           onClick={() => handleMenuClick('#reviews')}
-          className="text-text-dark text-2xl font-inter hover:text-primary transition-all duration-300 transform hover:scale-110"
+          className="text-text-dark text-2xl hover:text-primary transition-all duration-300 transform hover:scale-110"
         >
           Reviews
         </a>
         <a 
           href="#contact" 
           onClick={() => handleMenuClick('#contact')}
-          className="text-text-dark text-2xl font-inter hover:text-primary transition-all duration-300 transform hover:scale-110"
+          className="text-text-dark text-2xl hover:text-primary transition-all duration-300 transform hover:scale-110"
         >
           Contact
         </a>

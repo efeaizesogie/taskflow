@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = ({ children, onClick, variant = 'primary', size = 'md', className  }) => {
   // Tailwind classes based on variant and size
-  const baseClasses = ' px-5 py-2 min-w-30 rounded-3xl font-normal text-base transition duration-300 ';
+  const baseClasses = ' px-5 py-2 min-w-30 rounded-3xl font-normal text-base hover:scale-105 hover:translate-y-[-2px] transition duration-300 ';
 
   // Variant styles
   const variantClasses = {

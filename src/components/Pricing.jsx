@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import TitleHead from './titleHead'
 import PricingCard from './pricingCard';
 import CheckText from './checkText';
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const Pricing = () => {
 
     const [activePlan, setActivePlan] = useState('monthly');
+    const [titleRef, titleVisible] = useScrollAnimation()
+    const [cardsRef, cardsVisible] = useScrollAnimation()
 
     const getBorderStyle = (plan) => activePlan === plan ? "border border-text" : "";
 
@@ -23,20 +26,30 @@ const Pricing = () => {
 
 
   return (
-    <section className='bg-light-bg mb-10 md:mb-16' id='pricing'>
-        <div className='flex flex-col justify-center items-center px-5 md:px-20 py-16 max-w-[768px] mx-auto' >
+    <section className='bg-light-bg py-10 md:py-16' id='pricing'>
+        <div 
+          ref={titleRef}
+          className={`flex flex-col justify-center items-center px-5 md:px-20 py-16 max-w-[768px] mx-auto transition-all duration-700 ${
+            titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
             <TitleHead tag="Pricing" heading="Simple, transparent pricing" text="Choose a plan that fits your team's unique needs." />
 
             <div className='mb-12 flex justify-center gap-4 px-5 md:px-20 mt-12 '>
                 <div className='border border-text text-text rounded-lg p-1'>
-                    <button className={`${getBorderStyle('monthly')} px-6 py-2 rounded-lg font-medium cursor-pointer`} onClick={() => setActivePlan('monthly')}>Monthly</button>
-                    <button className={`${getBorderStyle('yearly')} px-6 py-2 rounded-lg font-medium cursor-pointer`} onClick={() => setActivePlan('yearly')}>Yearly</button>
+                    <button className={`${getBorderStyle('monthly')} px-6 py-2 rounded-lg font-medium cursor-pointer transition-all duration-300`} onClick={() => setActivePlan('monthly')}>Monthly</button>
+                    <button className={`${getBorderStyle('yearly')} px-6 py-2 rounded-lg font-medium cursor-pointer transition-all duration-300`} onClick={() => setActivePlan('yearly')}>Yearly</button>
                 </div>
             </div>
             
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20 pb-16  mx-auto">
+        <div 
+          ref={cardsRef}
+          className={`grid grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-20 pb-16 mx-auto transition-all duration-700 delay-200 ${
+            cardsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
                 <PricingCard planInfo="Free plan" icon='/plan.svg' price={freePrice} >
                     <CheckText text="Basic task management" />
                     <CheckText text="Limited team collaboration" />
