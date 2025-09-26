@@ -5,6 +5,7 @@
 /* Custom styles can be added below */
 body {
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 @theme {

@@ -23,7 +23,7 @@ const Pricing = () => {
 
 
   return (
-    <section className='bg-light-bg' id='pricing'>
+    <section className='bg-light-bg mb-10 md:mb-16' id='pricing'>
         <div className='flex flex-col justify-center items-center px-5 md:px-20 py-16 max-w-[768px] mx-auto' >
             <TitleHead tag="Pricing" heading="Simple, transparent pricing" text="Choose a plan that fits your team's unique needs." />
 

@@ -14,14 +14,14 @@ const Navbar = () => {
             <a href="#reviews" className=" hover:text-primary transition duration-300">Reviews</a>
             <a href="#contact" className=" hover:text-primary transition duration-300">Contact</a>
         </div>
-
-
-        
         </div>
 
         <div className="hidden md:flex ml-auto gap-4">
             <Button variant="secondary" ><a href="#log-in">Log in</a></Button>
             <Button variant="primary" ><a href="#sign-up">Sign up</a></Button>
+        </div>
+
+        <div>
         </div>
     </nav>
   )
