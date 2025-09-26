@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+
+/* Custom styles can be added below */
+body {
+  min-height: 100vh;
+}
+
+@theme {
+  --font-pacifico: "Pacifico", "cursive";
+  --font-inter: "Inter", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+
+  --color-primary: #15803D; /* Indigo-600 */
+  --color-secondary: #ec4899; /* Pink-500 */
+  --color-secondary-dark: #db2777; /* Pink-600 */
+  --color-dark-bg: #0D0006; /* Gray-50 */
+  --color-light-bg: #F9FAFB; 
+  --color-text: #0D0006; 
+  --color-text-dark: #f2f2f2; 
+}
