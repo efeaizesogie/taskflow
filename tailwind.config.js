@@ -26,9 +26,9 @@ export default {
         }
       },
       animation: {
-        slideInLeft: 'slideInLeft 1s ease-out',
-        slideInRight: 'slideInRight 1s ease-out',
-        slideDown: 'slideDown 0.8s ease-out'
+        slideInLeft: 'slideInLeft 5s ease-out',
+        slideInRight: 'slideInRight 5s ease-out',
+        slideDown: 'slideDown 3s ease-out'
       }
     },
   },

@@ -3,7 +3,7 @@ import Logo from './logo'
 import Button from './Button'
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="w-full flex justify-between items-center bg-dark-bg text-text-dark px-5 md:px-20 py-5 relative z-50 animate-[slideDown_0.8s_ease-out]">
+    <nav className="w-full flex justify-between items-center bg-dark-bg text-text-dark px-5 md:px-20 py-5 relative z-50  ">
       <div className='flex gap-12 items-center '>
         <Logo/>
 
